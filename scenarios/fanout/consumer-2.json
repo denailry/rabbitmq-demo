@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "exchange_name": "fanout-exchange",
+  "exchange_type": "fanout",
+  "queue_name": "queue2",
+  "routing_key": "key-2",
+  "exclusive": true
+}

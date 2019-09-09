@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "exchange_name": "direct-exchange",
+  "exchange_type": "direct",
+  "routing_key": "key-1"
+}

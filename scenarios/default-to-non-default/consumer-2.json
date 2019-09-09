@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "exchange_name": "direct-exchange",
+  "exchange_type": "direct",
+  "queue_name": "queue2",
+  "routing_key": "key-2",
+  "exclusive": true
+}

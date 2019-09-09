@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "exchange_name": "topic-exchange",
+  "exchange_type": "topic",
+  "routing_key": "berita.teknologi",
+  "message": "berita teknologi"
+}

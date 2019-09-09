@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "exchange_name": "topic-exchange",
+  "exchange_type": "topic",
+  "queue_name": "queue1",
+  "routing_key": "*.politik",
+  "exclusive": true
+}

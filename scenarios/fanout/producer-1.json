@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "exchange_name": "fanout-exchange",
+  "exchange_type": "fanout",
+  "routing_key": "key-1"
+}
