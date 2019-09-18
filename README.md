@@ -1,10 +1,10 @@
 # About
 RabbitMQ is a message broker. It mainly supports Advanced Message Queuing Protocol (AMQP) 0-9-1, but it has been extended to support other protocols such as STOMP, MQTT, AMQP 1.0, HTTP and websockets. This is example of RabbitMQ client implementation for learning and exploration purpose.
 
-# Structure
-- **consumer** directory contains implementation of message consumer which receive message from RabbitMQ.
-- **producer** directory contains implementation of message producer which send message to RabbitMQ.
-- **unrouted** directory contains implementation of receiver for unrouted message. Basically, it is the same as consumer but hard-coded to receive unrouted message.
+# Content
+- **app/{language}/consumer.{ext}** directory contains implementation of message consumer which receive message from RabbitMQ.
+- **app/{language}/producer.{ext}** directory contains implementation of message producer which send message to RabbitMQ.
+- **app/{language}/unrouted.{ext}** directory contains implementation of receiver for unrouted message. Basically, it is the same as consumer but hard-coded to receive unrouted message.
 - **scenarios** directory contains different configurations and script to run simulation of RabbitMQ usage.
 
 # AMQP 0-9-1 Model
@@ -30,4 +30,17 @@ This type of exchange will ignore routing key. It will send each messages to all
 Similar to direct exchange, but it can match the routing key with special pattern.
 
 # Defined Scenarios
-You can try to use RabbitMQ by using the defined scenarios in __scenarios__ directory. Firstly, make sure RabbitMQ service is already running. Go to one of the scenarios, run the script `./start-scenario`. Before running the script, you might want to install **pika** module first which is RabbitMQ's client for Python. It is recommeded to use virtual environment.
+You can try to use RabbitMQ by using the defined scenarios in __scenarios__ directory. Firstly, make sure RabbitMQ service is already running. You can see `scenario's name` inside `scenarios` directory. To run the scenario, you can specify the desired programming language and scenario's name. 
+
+Currently available languages are:
+- **python**. You should install **pika** module first which is RabbitMQ's client for Python. It is recommeded to use virtual environment.
+
+To run the scenario, use command below:
+```
+./start-scenario [language] [scenario_name]
+```
+
+For example:
+```
+./start-scenario python default-to-default
+```

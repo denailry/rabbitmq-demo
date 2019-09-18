@@ -1,0 +1,20 @@
+#!/bin/bash
+
+LANGUAGE=$1
+SCENARIO=$2
+
+case "$LANGUAGE" in 
+  "python") 
+    RUNNER=python
+    EXT=py
+    ;; 
+  "javascript") 
+    RUNNER=node
+    EXT=js
+    ;;
+  *) 
+    exit 1
+    ;;
+esac 
+
+./scenarios/$SCENARIO/start-scenario $RUNNER $LANGUAGE $EXT

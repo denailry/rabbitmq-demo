@@ -1,3 +1,5 @@
-gnome-terminal -e "python ../../producer/producer.py producer-1.json"
-gnome-terminal -e "python ../../consumer/consumer.py consumer-2.json"
-gnome-terminal -e "python ../../unrouted/unrouted.py"
+#!/bin/bash
+
+gnome-terminal -e "$1 ./app/$2/producer.$3 ./scenarios/unrouted/producer-1.json"
+gnome-terminal -e "$1 ./app/$2/consumer.$3 ./scenarios/unrouted/consumer-2.json"
+gnome-terminal -e "$1 ./app/$2/unrouted.$3"

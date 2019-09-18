@@ -2,7 +2,7 @@
   "host": "localhost",
   "exchange_name": "topic-exchange",
   "exchange_type": "topic",
-  "queue_name": "queue2",
+  "queue_name": "queue-topic-2",
   "routing_key": "berita.*",
   "exclusive": true
 }
