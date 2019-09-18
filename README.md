@@ -33,7 +33,8 @@ Similar to direct exchange, but it can match the routing key with special patter
 You can try to use RabbitMQ by using the defined scenarios in __scenarios__ directory. Firstly, make sure RabbitMQ service is already running. You can see `scenario's name` inside `scenarios` directory. To run the scenario, you can specify the desired programming language and scenario's name. 
 
 Currently available languages are:
-- **python**. You should install **pika** module first which is RabbitMQ's client for Python. It is recommeded to use virtual environment.
+- **python**. It requires **pika** module. It is recommeded to use virtual environment.
+- **javascript**. Please run `npm install` inside _app/javascript_ to solve dependecies.
 
 To run the scenario, use command below:
 ```

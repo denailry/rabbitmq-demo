@@ -1,0 +1,22 @@
+{
+  "name": "rabbitmq-demo",
+  "version": "1.0.0",
+  "description": "example of rabbitmq client using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denailry/rabbitmq-demo.git"
+  },
+  "author": "denailry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denailry/rabbitmq-demo/issues"
+  },
+  "homepage": "https://github.com/denailry/rabbitmq-demo#readme",
+  "dependencies": {
+    "amqplib": "^0.5.5"
+  }
+}
