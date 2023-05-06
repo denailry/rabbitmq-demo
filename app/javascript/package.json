@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/denailry/rabbitmq-demo#readme",
   "dependencies": {
-    "amqplib": "^0.5.5"
+    "amqplib": "^0.10.3"
   }
 }
